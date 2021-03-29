@@ -21,8 +21,8 @@ using json = nlohmann::json;
 
 class Client {
  public:
-  Client(std::string username, std::string host, std::string port,
-         std::string target);
+  Client(std::string username_, std::string host_, std::string port_,
+         std::string target_);
   json send(std::string input);
   friend std::ostream& operator<<(std::ostream &out, Client& client);
  private:

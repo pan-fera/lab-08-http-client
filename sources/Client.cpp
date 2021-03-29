@@ -5,10 +5,10 @@
 #include "Client.hpp"
 
 #include <utility>
-Client::Client(std::string username, std::string host, std::string port,
-std::string target):_username(std::move(username)), _host(std::move(host)),
-                                     _port(std::move(port)),
-                                     _target(std::move(target)){}
+Client::Client(std::string username_, std::string host_, std::string port_,
+std::string target_):_username(std::move(username_)), _host(std::move(host_)),
+                                     _port(std::move(port_)),
+                                     _target(std::move(target_)){}
 json Client::send(std::string input){
   int version = 11;
 
