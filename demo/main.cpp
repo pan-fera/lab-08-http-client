@@ -20,11 +20,11 @@ int main(int argc, char** argv)
     Client client(username, host, port, target);
 
     std::string _continue;
-    do {
+   // do {
       std::cout << client;
       std::cout<<"Proceed? y/n: ";
       std::cin>>_continue;
-    }while(_continue == "y");
+   // }while(_continue == "y");
   }
   catch(std::exception const& e)
   {
