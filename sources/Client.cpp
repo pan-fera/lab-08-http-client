@@ -6,9 +6,9 @@
 
 #include <utility>
 Client::Client(const char* username, const char* host, const char* port,
-               const char* target):_username(std::move(username)), _host(std::move(host)),
-                                     _port(std::move(port)),
-                                     _target(std::move(target)){}
+const char* target):_username(username), _host(host),
+ _port(port),
+_target(target){}
 json Client::send(const std::string& input){
   int version = 11;
 
